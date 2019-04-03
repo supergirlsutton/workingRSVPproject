@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask app</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  </head>
+
+    <body>
+<div class="top">
+</div>
+<div class="form">
+  <div class ="info">
+  <h1>RSVP</h1>
+  <h2>for the wedding of</h2>
+  <h1>Annie & Habeeb</h1>
+    <p class= "line">________________________________________</p>
+    <h2>The Details</h2>
+    <p>Saturday, May 2, 2020</p>
+    <p>1:00 PM</p>
+    <br>
+    <h2>Ceremony & Reception</h2>
+    <p>Church: Hampstead Parish Church, Church Row, London, NW3 6UU</p>
+    <p>Reception: Samuel Pepys, 48 Upper Thames St, London EC4V 3PT</p>
+         <p class= "line">________________________________________</p>
+
+  <form method="post" action="{{ url_for('success') }}">
+    <input name="name" input type="text" placeholder="Name and last name" required>
+    <input name ="guests" input type="number" placeholder="Number of guests" required>
+    <input name ="email" input type="email" placeholder="Email address" required>
+  </div>
+    <button class ="accept">Submit</button>
+</div>
+  </form>
+      </body>
+
+</html>
