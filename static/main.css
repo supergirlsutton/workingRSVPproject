@@ -73,6 +73,10 @@ button {
   float:left;
 }
 
+label {
+  float: left; width: 10em; margin-right: 1em;
+}
+
 button.accept {
   border-radius: 0px 0px 0px 10px;
 }
