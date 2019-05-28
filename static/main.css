@@ -128,3 +128,8 @@ button:focus {
     font-family: 'Great Vibes', cursive;
     font-weight: bold;
   }
+  #vegetarian {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
