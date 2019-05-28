@@ -130,11 +130,11 @@ button:focus {
   }
   #vegetarian {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 10px;
   }
   #vegan {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 30px;
   }
