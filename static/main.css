@@ -139,4 +139,11 @@ button:focus {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    
+  }
+  #carnivore {
+    list-style:none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+  }
