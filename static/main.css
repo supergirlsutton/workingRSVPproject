@@ -129,12 +129,14 @@ button:focus {
     font-weight: bold;
   }
   #vegetarian {
+    list-style:none;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    margin-left: 10px;
   }
   #vegan {
+    list-style:none;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    margin-left: 30px;
-  }
+    
