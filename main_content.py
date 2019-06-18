@@ -15,7 +15,8 @@ def success():
     formName=request.form['name']
     formGuests=request.form['guests']
     formEmail=request.form['email']
-    send_simple_message(formName, formGuests, formEmail)
+    formVegetarian=request.form['vegetarian-vegan']
+    send_simple_message(formName, formGuests, formEmail, formVegetarian)
     return render_template('success.html', name=formName)
 
 import requests
@@ -23,15 +24,16 @@ import requests
 API_KEY = "cc1be912ad91e420f327101bb5d096b5-7bce17e5-c201b125"
 DOMAIN_NAME ="sandbox58c29f7f76574b62a838d23116825fa6.mailgun.org"
 
-def send_simple_message(name, guests, email):
+def send_simple_message(name, guests, email, vegetarianvegan):
     return requests.post(
         "https://api.mailgun.net/v3/"+DOMAIN_NAME+"/messages",
         auth=("api", API_KEY),
         data={"from": "Wedding planner <mailgun@"+DOMAIN_NAME+">",
               "to": ["supergirlsutton@gmail.com"],
               "subject": "New guests sign up",
-              "text": name + " " + "Guests:" + " " + str(guests) + " " + "Email:" + " " + str(email)})
-
+              "text": name + " " + "Guests:" + " " + str(guests) + " " + "Email:" + " " + str(email) + " " + "Food Preference"
+ 			+ str(vegetarianvegan)
+ 		})
 if __name__ == "__main__":
 
     app.run(host='0.0.0.0', port=port, debug=False)
