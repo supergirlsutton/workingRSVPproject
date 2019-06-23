@@ -20,19 +20,14 @@
     <p>1:00 PM</p>
     <br>
     <h2>Ceremony & Reception</h2>
-    <p>Church: <a href="https://www.google.com/maps/dir/51.5461853,-0.2944762/Hampstead+Parish+Church,+Church+Row,+London,+NW3+6UU/@51.559005,-0.3093922,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48761a8712a80a53:0x971ec79c9160cac8!2m2!1d-0.1810877!2d51.5553307">Hampstead Parish Church, Church Row, London, NW3 6UU</p></a>
+    <p>Church (even though you are invited to the evening, please feel free to come to the Church to celebrate the ceremony with us.): <a href="https://www.google.com/maps/dir/51.5461853,-0.2944762/Hampstead+Parish+Church,+Church+Row,+London,+NW3+6UU/@51.559005,-0.3093922,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48761a8712a80a53:0x971ec79c9160cac8!2m2!1d-0.1810877!2d51.5553307">Hampstead Parish Church, Church Row, London, NW3 6UU</p></a>
     <p>Reception: Samuel Pepys, 48 Upper Thames St, London EC4V 3PT</p>
          <p class= "line">________________________________________</p>
 
   <form method="post" action="{{ url_for('success') }}">
     <input name="name" input type="text" placeholder="Name and last name" required>
-    <input name ="guests" input type="number" placeholder="Number of guests" required>
+    <input name ="rsvp" input type="rsvp" placeholder="Can you make it? Yes/No" required>
     <input name ="email" input type="email" placeholder="Email address" required>
-   	<legend></legend><p2><em>Are you a vegetarian, vegan or carnivore?</em></p2></legend>
-   <legend></legend><p2><em>Are you a vegetarian, vegan or carnivore?</em></p2></legend>
-    <fieldset><label for="vegetarian"><input id="vegetarian" value="vegetarian" type="radio" name="foodpreference">Vegetarian</label>
-    <label for="vegan"><input id="vegan" value="vegan" type="radio" name="foodpreference">Vegan</label>
-    <label for="carnivore"><input id="carnivore" value="carnivore" type="radio" name="foodpreference">Carnivore</label><br></fieldset> 
     <input type="hidden" id="when" name="when" value="{{when}}">
   </div>
     <button class ="accept">Submit</button>
