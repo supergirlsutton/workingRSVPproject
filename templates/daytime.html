@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Flask app</title>
+    <title>Annie and Habeeb's Wedding RSVP</title>
    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
   </head>
 
@@ -25,10 +25,9 @@
          <p class= "line">________________________________________</p>
 
   <form method="post" action="{{ url_for('success') }}">
-    <input name="name" input type="text" placeholder="Name(s) (please include your +1 if necessary)" required>
+    <input name="name" input type="text" placeholder="Name(s) (as on email)" required>
     <input name ="email" input type="email" placeholder="Email address" required>
    	<legend></legend><p2><em>Are you a vegetarian, vegan or carnivore?</em></p2></legend>
-   <legend></legend><p2><em>Are you a vegetarian, vegan or carnivore?</em></p2></legend>
     <fieldset><label for="vegetarian"><input id="vegetarian" value="vegetarian" type="radio" name="foodpreference">Vegetarian</label>
     <label for="vegan"><input id="vegan" value="vegan" type="radio" name="foodpreference">Vegan</label>
     <label for="carnivore"><input id="carnivore" value="carnivore" type="radio" name="foodpreference">Carnivore</label><br></fieldset> 

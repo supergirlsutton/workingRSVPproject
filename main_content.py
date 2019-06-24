@@ -9,6 +9,10 @@ port = int(os.environ.get("PORT", 5000))
 @app.route("/home", methods=['GET', 'POST'])
 def home():
     return render_template('daytime.html', when="daytime")
+
+@app.route("/evening", methods=['GET', 'POST'])
+def evening():
+    return render_template('evening.html', when="evening")
     
 @app.route("/success", methods=['GET','POST'])
 def success():
