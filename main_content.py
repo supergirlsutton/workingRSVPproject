@@ -36,8 +36,8 @@ def send_simple_message(name, email, foodpreference, rsvp, when):
         data={"from": "Wedding planner <mailgun@"+DOMAIN_NAME+">",
               "to": ["supergirlsutton@gmail.com"],
               "subject": "New Guest RSVP",
-              "text": name + " " +  " " + " Email: " + " " + str(email) + " " + " Food Preference: "
- 				+ str(foodpreference) + "RSVP:" + "" + str(rsvp) + " When:  " + str(when)
+              "text": name + " " +  " " + " Email: " + " " + str(email) +  " "  +  " Food Preference: " 
+ 				+ str(foodpreference) +  "RSVP:"  + ""  + str(rsvp)  + " When:  " + str(when)
  		})
 
 #this below line allows you to make changes while it updates the local server - screen shot on desktop - CHANGE TO FALSE on deploy

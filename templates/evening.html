@@ -17,20 +17,27 @@
     <p class= "line">________________________________________</p>
     <h2>The Details</h2>
     <p>Saturday, May 2, 2020</p>
-    <p>1:00 PM</p>
+    <p>7:00 PM</p>
     <br>
-    <h2>Ceremony & Reception</h2>
-    <p>Church (even though you are invited to the evening, please feel free to come to the Church to celebrate the ceremony with us.): <a href="https://www.google.com/maps/dir/51.5461853,-0.2944762/Hampstead+Parish+Church,+Church+Row,+London,+NW3+6UU/@51.559005,-0.3093922,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48761a8712a80a53:0x971ec79c9160cac8!2m2!1d-0.1810877!2d51.5553307">Hampstead Parish Church, Church Row, London, NW3 6UU</p></a>
+    <h2>Ceremony & Evening Reception details</h2>
+    <p>Please feel free to come to the Church to celebrate the ceremony with us.</p>
+    <p>Church: Hampstead Parish Church, Church Row, London, NW3 6UU</p>
     <p>Reception: Samuel Pepys, 48 Upper Thames St, London EC4V 3PT</p>
          <p class= "line">________________________________________</p>
 
   <form method="post" action="{{ url_for('success') }}">
-    <input name="name" input type="text" placeholder="Name and last name" required>
-    <input name ="rsvp" input type="rsvp" placeholder="Can you make it? Yes/No" required>
-    <input name ="email" input type="email" placeholder="Email address" required>
+    <legend></legend><p2><em>What is your full name?</em></p2></legend>
+    <input name="name" input type="text" placeholder="Name(s)" required>
+    <legend></legend><p2><em>What is your email address?</em></p2></legend>
+    <input name="email" input type="text" placeholder="Email address" required>
+    <legend></legend><p2><em>Can you make it to the church reception of our special day?</em></p2></legend>
+    <input name="rsvp" input type="text" placeholder="Please reply Yes/No" required>
+    <legend></legend><p2><em>Can you make it to the evening reception of our special day?</em></p2></legend>
+    <input name="rsvp" input type="text" placeholder="Please reply Yes/No" required>
     <input type="hidden" id="when" name="when" value="{{when}}">
   </div>
     <button class ="accept">Submit</button>
+
 </div>
   </form>
       </body>
