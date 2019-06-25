@@ -25,12 +25,12 @@
          <p class= "line">________________________________________</p>
 
   <form method="post" action="{{ url_for('success') }}">
+    <legend></legend><p2><em>What is your full name (and name of +1 if applicable)?</em></p2></legend>
     <input name="name" input type="text" placeholder="Name(s)" required>
+    <legend></legend><p2><em>What is your email address?</em></p2></legend>
     <input name="email" input type="text" placeholder="Email address" required>
    	<legend></legend><p2><em>Are you a vegetarian, vegan or carnivore?</em></p2></legend>
-    <fieldset><label for="vegetarian"><input id="vegetarian" value="vegetarian" type="radio" name="foodpreference">Vegetarian</label>
-    <label for="vegan"><input id="vegan" value="vegan" type="radio" name="foodpreference">Vegan</label>
-    <label for="carnivore"><input id="carnivore" value="carnivore" type="radio" name="foodpreference">Carnivore</label><br></fieldset> 
+    <input name="foodpreference" input type="text" placeholder="Food Preference" required>
     <input type="hidden" id="when" name="when" value="{{when}}">
   </div>
     <button class ="accept">Submit</button>
