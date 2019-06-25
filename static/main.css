@@ -64,6 +64,10 @@ input:focus {
   outline: 0;
 }
 
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
 .button button {
   display: inline-block;
   width: 400px;
