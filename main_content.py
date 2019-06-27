@@ -18,7 +18,7 @@ def evening():
 def success():
     formName=request.form['name']
     formEmail=request.form['email']
-    formFoodpreference=request.form['foodpreference']
+    formFoodpreference=request.form.get('foodpreference', '')
     formRsvp=request.form['rsvp']
     formWhen=request.form['when']
     send_simple_message(formName, formEmail, formFoodpreference, formRsvp, formWhen)
