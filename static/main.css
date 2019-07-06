@@ -7,7 +7,7 @@ background-color: #FFFFFF;
 font-family: 'Raleway';
 }
 .top {
-  background-color: #A9A9A9;
+  background-color: #eba7a7;
   height: 200px;
   margin:0;
   padding:0;
@@ -17,11 +17,13 @@ font-family: 'Raleway';
 .form {
   height: 1000px;
   width: 400px;
+  text-align: center;
   background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
   margin: -110px auto;
   border-radius: 10px;
   color: #666;
   padding: 0px 0px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .info {
