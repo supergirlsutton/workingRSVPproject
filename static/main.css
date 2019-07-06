@@ -151,7 +151,7 @@ button:focus {
     text-align: center;
     padding: 0px;
     margin: 5px 5px;
-    font-family: 'Raleway';
+    font-family: 'Source Serif Pro', serif;
   }
   #vegetarian {
     list-style:none;
