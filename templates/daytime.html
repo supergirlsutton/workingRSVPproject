@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Annie and Habeeb's Wedding RSVP</title>
    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-  </head>
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
 
+  </head>
     <body>
 <div class="top">
 </div>
@@ -21,18 +22,18 @@
 
     <br>
     <h2>Ceremony & Reception</h2>
-    <p>Church: Hampstead Parish Church, Church Row, London, NW3 6UU</p></a>
-    <p>Reception: Samuel Pepys, 48 Upper Thames St, London EC4V 3PT</p>
+    <p><b>Church:</b> Hampstead Parish Church, Church Row, London, NW3 6UU</p></a>
+  <p><b>Reception:</b> Samuel Pepys, 48 Upper Thames St, London EC4V 3PT</p>
          <p class= "line">________________________________________</p>
 
   <form method="post" action="{{ url_for('success') }}">
-    <legend></legend><p2><em>What is your full name?</em></p2></legend>
+    <legend></legend><p2>What is your full name?</p2></legend>
     <input name="name" input type="text" placeholder="Name(s)" required>
-    <legend></legend><p2><em>What is your email address?</em></p2></legend>
+    <legend></legend><p2>What is your email address?</p2></legend>
     <input name="email" input type="text" placeholder="Email address" required>
-   	<legend></legend><p2><em>Are you a vegetarian, vegan or carnivore?</em></p2></legend>
+    <legend></legend><p2>Are you a vegetarian, vegan or carnivore?</p2></legend>
     <input name="foodpreference" input type="text" placeholder="Food Preference" required>
-    <legend></legend><p2><em>Can you make it to our special day?</em></p2></legend>
+    <legend></legend><p2>Can you make it to our special day?</p2></legend>
     <input name="rsvp" input type="text" placeholder="Please reply Yes/No" required>
     <input type="hidden" id="when" name="when" value="{{when}}">
   </div>
