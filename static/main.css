@@ -5,7 +5,12 @@ margin: 0;
 padding: 0;
 background-color: #FFFFFF;
 font-family: 'Raleway';
-background-image: url('https://imgur.com/a/q8nr8De');
+background: url('https://imgur.com/a/q8nr8De');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
 }
 .top {
   background-color: #eba7a7;
