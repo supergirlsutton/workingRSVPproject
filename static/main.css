@@ -24,6 +24,8 @@ font-family: 'Raleway';
   color: #666;
   padding: 0px 0px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: -110px auto 110px;
 }
 
 .info {
@@ -84,6 +86,9 @@ button {
   padding: 15px 32px;
   width: 400px;
   float:left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 label {0
@@ -95,7 +100,7 @@ label {0
 }
 
 button.accept {
-  border-radius: 0px 0px 0px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 button.regret {
