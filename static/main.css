@@ -5,6 +5,7 @@ margin: 0;
 padding: 0;
 background-color: #FFFFFF;
 font-family: 'Raleway';
+background: url(https://imgur.com/a/q8nr8De);
 }
 .top {
   background-color: #eba7a7;
@@ -108,8 +109,9 @@ button.regret {
 }
 
 button:hover {
-  background-color: #cc919a;
-  transition: .5s;
+    background-color: #cc919a;
+    transition: .5s;
+    cursor: pointer;
 }
 
 button:focus {
@@ -117,7 +119,7 @@ button:focus {
 }
 
 .thankyou {
-  height: 200px;
+  height: 400px;
   width: 400px;
   background-color: #fff;
   margin: -110px auto;
@@ -138,6 +140,12 @@ button:focus {
     color:#ffbdc7;
     font-family: 'Great Vibes', cursive;
     font-weight: bold;
+  }
+  #p03 {
+    text-align: center;
+    padding: 0px;
+    margin: 5px 5px;
+    font-family: 'Raleway';
   }
   #vegetarian {
     list-style:none;

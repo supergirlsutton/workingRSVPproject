@@ -42,4 +42,4 @@ def send_simple_message(name, email, foodpreference, rsvp, when):
  		})
 
 #this below line allows you to make changes while it updates the local server - screen shot on desktop - CHANGE TO FALSE on deploy
-app.run(host='0.0.0.0', port=port, debug=True)
+app.run(host='0.0.0.0', port=port, debug=False)
